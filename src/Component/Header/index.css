@@ -27,6 +27,10 @@
     gap: 30px;
 }
 
+.Header .headerLeft .twitchLogo {
+    cursor: pointer;
+}
+
 .Header .headerLeft a {
     margin-top: -8px;
 
@@ -35,7 +39,7 @@
     color: #424244;
     text-decoration: none;
 
-    transition: .15s;
+    transition: .1s;
 }
 
 .Header .headerLeft a:hover {
@@ -62,12 +66,12 @@
 
     position: relative;
     
-    cursor: pointer;
+    cursor: not-allowed;
     overflow: hidden;
 }
 
 .Header .headerCenter .search input {
-    width: 85%;
+    width: calc(100% - 63px);
     height: 90%;
     padding-left: 15px;
     border-radius: 7px 0px 0px 7px;
@@ -87,7 +91,7 @@
     padding: 0px 10px;
     height: 100%;
     border-radius: 0px 7px 7px 0px;
-    border-left: 2.5px solid #fff;
+    border-left: 3.5px solid #fff;
     
     background: #f7f7f8;
 
@@ -96,4 +100,32 @@
     right: -22px;
 
     transform: translate(-50%, -50%);
+}
+
+.Header .headerRight {
+    margin-right: 11.5px;
+}
+
+.Header .headerRight .crowIcon {
+    padding: 5px;
+    border-radius: 2.5px;
+}
+
+.Header .headerRight .crowIcon:hover {
+    background: #e7e7e8;
+
+    cursor: pointer;
+}
+
+.Header .headerRight button {
+    padding: 5px;
+    border: none;
+}
+
+.Header .headerRight .btnSignIn {
+    background: #e7e7e8;
+}
+
+.Header .headerRight .btnSignUp {
+    background: #9147ff;
 }
