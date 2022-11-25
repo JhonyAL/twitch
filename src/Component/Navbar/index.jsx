@@ -4,6 +4,7 @@ import './style.css'
 
 import bt0tv from '../../assets/image/bt0tv.png'
 import coreano from '../../assets/image/coreano.png'
+import casimiro from '../../assets/image/casimiro.png'
 
 export default function Navbar() {
 
@@ -21,6 +22,13 @@ export default function Navbar() {
             name: "Coreano",
             decription: "Valorant",
             viewsNow: 2800
+        },
+        {
+            id: 2,
+            img: casimiro,
+            name: "casimiro",
+            decription: "Esportes",
+            viewsNow: 32536
         }
     ]
 
@@ -28,19 +36,21 @@ export default function Navbar() {
         <div className="Navbar">
             <div className="top">
                 <h3>Canais Recomendados</h3>
-                <HiUpload className='exitIcon' size={20} />
+                <HiUpload className='exitIcon' size={25} />
             </div>
             <div className='channels'>
                 {channels.map((e) => {
                     return (
                         <div key={e.id}>
                             <div className="channel">
-                                <img src={e.img} alt={e.name} />
-                                <h5>{e.name}</h5>
-                                <span>{e.viewsNow}</span>
-                            </div>
-                            <div className='descriptionChannel'>
-                                <span>{e.decription}</span>
+                                <div className="user">                                    
+                                    <img src={e.img} alt={e.name} />
+                                    <div className="userInfo">
+                                        <h5>{e.name}</h5>
+                                        <span>{e.decription}</span>
+                                    </div>
+                                </div>
+                                <span className='views'><div></div>{e.viewsNow > 1000 ? Math.round((e.viewsNow/1000), 1) + " mil" : e.viewsNow}</span>
                             </div>
                         </div>
                     )

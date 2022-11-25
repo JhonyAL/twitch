@@ -1,14 +1,12 @@
 import './App.css'
 
-import Header from './Component/Header'
-import Navbar from './Component/Navbar'
+import GeneralHeader from './Component/GeneralHeader'
 
 export default function App() {
 
   return (
     <div className='App'>
-      <Header />
-      <Navbar />
+      <GeneralHeader />
     </div>
   )
 }
