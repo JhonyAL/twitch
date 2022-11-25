@@ -4,10 +4,10 @@ import { FiUser } from 'react-icons/fi'
 export default function Right() {
     return (
         <div className="headerRight">
-            <CgCrown className='crowIcon' size={20}/>
+            <CgCrown className='crowIcon' size={28}/>
             <button className='btnSignIn'>Entrar</button>
             <button className='btnSignUp'>Cadastrar-se</button>
-            <FiUser className='userIcon' size={20} />
+            <FiUser className='userIcon' size={28} />
         </div>
     )
 }

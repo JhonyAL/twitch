@@ -11,7 +11,7 @@ export default function Center() {
                     let value = e.target.value
                     setSearch(value)
                 }}/>
-                <FiSearch className='searchIcon' size={20}/>
+                <FiSearch className='searchIcon' size={45}/>
             </div>
         </div>
     )
