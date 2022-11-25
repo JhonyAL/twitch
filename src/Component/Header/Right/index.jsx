@@ -7,7 +7,7 @@ export default function Right() {
             <CgCrown className='crowIcon' size={20}/>
             <button className='btnSignIn'>Entrar</button>
             <button className='btnSignUp'>Cadastrar-se</button>
-            <FiUser className='userIcon'/>
+            <FiUser className='userIcon' size={20} />
         </div>
     )
 }

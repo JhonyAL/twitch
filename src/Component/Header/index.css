@@ -2,7 +2,8 @@
 
 .Header,
 .Header .headerLeft,
-.Header .headerCenter {
+.Header .headerCenter,
+.Header .headerRight {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,19 +60,18 @@
 
 .Header .headerCenter .search {
     width: 400px;
-    height: 40px;
-    border-radius: 7px;
+    height: 37px;
+    border-radius: 5px;
 
     background: #e7e7e8;
 
     position: relative;
     
-    cursor: not-allowed;
     overflow: hidden;
 }
 
 .Header .headerCenter .search input {
-    width: calc(100% - 63px);
+    width: 85%;
     height: 90%;
     padding-left: 15px;
     border-radius: 7px 0px 0px 7px;
@@ -84,48 +84,72 @@
 }
 
 .Header .headerCenter .search input:hover {
-    border: 1px solid #000;
+    border: 1px solid #bbb;
 }
 
 .Header .headerCenter .search .searchIcon {
     padding: 0px 10px;
     height: 100%;
     border-radius: 0px 7px 7px 0px;
-    border-left: 3.5px solid #fff;
+    border-left: 2.5px solid #fff;
     
-    background: #f7f7f8;
+    background: #f0f0f0;
 
     position: absolute;
     top: 50%;
     right: -22px;
-
     transform: translate(-50%, -50%);
+
+    cursor: not-allowed;
+}
+
+.Header .headerCenter .search .searchIcon:hover {
+    background: #e7e7e8;
 }
 
 .Header .headerRight {
     margin-right: 11.5px;
+    padding-right: 11.5px;
+    gap: 10px;
 }
 
-.Header .headerRight .crowIcon {
+.Header .headerRight .crowIcon,
+.Header .headerRight .userIcon {
     padding: 5px;
     border-radius: 2.5px;
 }
 
-.Header .headerRight .crowIcon:hover {
+.Header .headerRight .crowIcon:hover,
+.Header .headerRight .userIcon:hover {
     background: #e7e7e8;
 
     cursor: pointer;
 }
 
 .Header .headerRight button {
-    padding: 5px;
+    padding: 7.5px 9px;
+    border-radius: 3px;
     border: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
 }
 
 .Header .headerRight .btnSignIn {
     background: #e7e7e8;
 }
 
+.Header .headerRight .btnSignIn:hover {
+    background: #d7d7d8;
+}
+
 .Header .headerRight .btnSignUp {
     background: #9147ff;
+    color: #eee;
+}
+
+.Header .headerRight .btnSignUp:hover {
+    background: #7b3ed6;
 }
