@@ -1,4 +1,4 @@
-import './index.css'
+import './style.css'
 
 import Center from './Center'
 import Left from './Left'

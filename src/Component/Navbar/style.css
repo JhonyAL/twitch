@@ -1,0 +1,27 @@
+.Navbar {
+    width: 240px;
+    height: 100vh;
+    padding: 13px 10px;
+
+    background: #efeff1;
+}
+
+.Navbar .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Navbar .top h3 {
+    color: #404040;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.Navbar .exitIcon {
+    transform: rotate(-90deg);
+}
+
+.Navbar .channels .channel {
+    
+}
